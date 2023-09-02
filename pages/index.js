@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import PrimaryLayout from "../components/layouts/PrimaryLayout";
+import SearchForm from "../components/forms/SearchForm";
 import sky from "public/images/sky.jpg";
 
 export default function Home() {
@@ -15,10 +16,11 @@ export default function Home() {
                 <section className="relative">
                     <Image className="absolute h-full w-full object-cover -z-10" src={sky} alt="Sky background" />
                     <div className="px-3 z-10">
-                        <div className="max-w-screen-xl mx-auto py-44">
-                            <h1 className="text-3xl font-bold underline">
-                                Hello world!
+                        <div className="max-w-screen-xl mx-auto md:py-44 py-32">
+                            <h1 className="text-3xl font-semibold text-gray-900">
+                                Search for a city or place
                             </h1>
+                            <SearchForm />
                         </div>
                     </div>
                 </section>
