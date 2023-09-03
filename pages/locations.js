@@ -12,7 +12,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <PrimaryLayout content={
-                <section className="w-full px-3 bg-gray-100">
+                <section className="w-full px-3 bg-white">
                     <div className="max-w-screen-xl mx-auto py-20">
                         <h1 className="text-3xl font-semibold text-gray-900 mb-4">
                             Popular Locations
