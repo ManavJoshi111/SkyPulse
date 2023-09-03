@@ -73,7 +73,7 @@ export default function Home() {
                             <ul className="space-y-4">
                                 {faqData.map((qa) => {
                                     return (
-                                        <li className="p-6 bg-white rounded cursor-pointer" onClick={() => setHowItWorks(howItWorks !== qa.question ? qa.question : null)}>
+                                        <li className="p-6 bg-white rounded cursor-pointer" key={qa.question} onClick={() => setHowItWorks(howItWorks !== qa.question ? qa.question : null)}>
                                             <div className="flex justify-between items-center gap-4">
                                                 <p className="text-xl text-gray-900">
                                                     {qa.question}
