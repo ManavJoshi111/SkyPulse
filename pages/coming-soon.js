@@ -1,6 +1,6 @@
 import Head from "next/head";
 import PrimaryLayout from "../components/layouts/PrimaryLayout";
-import PrimaryLink from "@/components/links/PrimaryLink";
+import PrimaryLink from "../components/links/PrimaryLink";
 
 export default function Home() {
     return (
@@ -12,7 +12,7 @@ export default function Home() {
             </Head>
             <PrimaryLayout content={
                 <section className="w-full px-3">
-                    <div className="max-w-screen-xl mx-auto">
+                    <div className="max-w-screen-xl mx-auto py-20">
                         <h1 className="text-3xl font-semibold text-gray-900">
                             Coming Soon
                         </h1>

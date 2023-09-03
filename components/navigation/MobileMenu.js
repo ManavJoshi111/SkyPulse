@@ -22,7 +22,7 @@ export default function MobileMenu({ toggleMobileMenu }) {
                     </li>
                     <li>
                         <div className="ml-6">
-                            <SecondaryLink text="Locations" href="/coming-soon" />
+                            <SecondaryLink text="Locations" href="/locations" />
                         </div>
                     </li>
                     <li>

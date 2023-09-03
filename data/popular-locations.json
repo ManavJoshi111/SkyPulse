@@ -1,0 +1,78 @@
+[
+    {
+        "location": "Los Angeles",
+        "coordinates": "34.0549° N, 118.2426° W"
+    },
+    {
+        "location": "New York City",
+        "coordinates": "40.7128° N, 74.0060° W"
+    },
+    {
+        "location": "San Francisco",
+        "coordinates": "37.7749° N, 122.4194° W"
+    },
+    {
+        "location": "Chicago",
+        "coordinates": "41.8781° N, 87.6298° W"
+    },
+    {
+        "location": "Miami",
+        "coordinates": "25.7617° N, 80.1918° W"
+    },
+    {
+        "location": "London",
+        "coordinates": "51.5074° N, 0.1278° W"
+    },
+    {
+        "location": "Paris",
+        "coordinates": "48.8566° N, 2.3522° E"
+    },
+    {
+        "location": "Tokyo",
+        "coordinates": "35.682839° N, 139.759455° E"
+    },
+    {
+        "location": "Sydney",
+        "coordinates": "33.8688° S, 151.2093° E"
+    },
+    {
+        "location": "Rio de Janeiro",
+        "coordinates": "22.9068° S, 43.1729° W"
+    },
+    {
+        "location": "Cape Town",
+        "coordinates": "33.9249° S, 18.4241° E"
+    },
+    {
+        "location": "Toronto",
+        "coordinates": "43.651070° N, 79.347015° W"
+    },
+    {
+        "location": "Dubai",
+        "coordinates": "25.276987° N, 55.296249° E"
+    },
+    {
+        "location": "Bali",
+        "coordinates": "8.3405° S, 115.0920° E"
+    },
+    {
+        "location": "Rome",
+        "coordinates": "41.9028° N, 12.4964° E"
+    },
+    {
+        "location": "Berlin",
+        "coordinates": "52.5200° N, 13.4050° E"
+    },
+    {
+        "location": "Barcelona",
+        "coordinates": "41.3851° N, 2.1734° E"
+    },
+    {
+        "location": "Bangkok",
+        "coordinates": "13.7563° N, 100.5018° E"
+    },
+    {
+        "location": "Machu Picchu",
+        "coordinates": "13.1631° S, 72.5450° W"
+    }
+]  

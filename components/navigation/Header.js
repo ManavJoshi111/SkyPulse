@@ -50,7 +50,7 @@ export default function Header() {
                         <SecondaryLink text="Search" href="/" />
                     </li>
                     <li>
-                        <SecondaryLink text="Locations" href="/coming-soon" />
+                        <SecondaryLink text="Locations" href="/locations" />
                     </li>
                     <li>
                         <SecondaryLinkIcon
