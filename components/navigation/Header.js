@@ -37,7 +37,7 @@ export default function Header() {
     }, [router.events])
 
     return (
-        <header className="relative px-3 border-b border-gray-300">
+        <header className="relative sticky top-0 px-3 bg-white border-b border-gray-300 z-20">
             <div className="max-w-screen-xl mx-auto py-5 flex justify-between items-center">
                 <Link className="flex items-center gap-2 text-2xl font-semibold text-gray-900" href="/">
                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">

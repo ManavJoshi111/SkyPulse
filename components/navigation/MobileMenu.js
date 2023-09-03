@@ -7,14 +7,14 @@ export default function MobileMenu({ toggleMobileMenu }) {
             <div className="md:hidden fixed top-0 left-0 h-20 w-full bg-gray-900/30 z-20" onClick={() => toggleMobileMenu()}></div>
             <div className="md:hidden fixed top-20 left-0 h-screen w-full bg-gray-900/30 z-20" onClick={() => toggleMobileMenu()}></div>
             <div className="md:hidden fixed top-0 right-0 w-52 h-20 bg-white border-l border-gray-300 z-20">
-                <button className="fixed top-8 right-3 w-6 h-6 text-gray-700 hover:text-gray-900" onClick={() => toggleMobileMenu()} aria-label="Close menu">
+                <button className="fixed top-8 right-3 w-6 h-6 text-gray-900" onClick={() => toggleMobileMenu()} aria-label="Close menu">
                     <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <div className="md:hidden fixed top-20 right-0 w-52 h-screen bg-white border-l border-gray-300 z-20">
-                <ul className="text-lg text-gray-700 hover:text-gray-900">
+                <ul>
                     <li>
                         <div className="ml-6">
                             <SecondaryLink text="Search" href="/" />

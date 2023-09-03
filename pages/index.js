@@ -1,10 +1,14 @@
+import { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import PrimaryLayout from "../components/layouts/PrimaryLayout";
 import SearchForm from "../components/forms/SearchForm";
 import sky from "public/images/sky.jpg";
+import faqData from '../data/faq.json';
 
 export default function Home() {
+    const [howItWorks, setHowItWorks] = useState(null);
+
     return (
         <>
             <Head>
@@ -13,17 +17,81 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <PrimaryLayout content={
-                <section className="relative">
-                    <Image className="absolute h-full w-full object-cover -z-10" src={sky} alt="Sky background" />
-                    <div className="px-3 z-10">
-                        <div className="max-w-screen-xl mx-auto md:py-44 py-32">
-                            <h1 className="text-3xl font-semibold text-gray-900">
-                                Search for a city or place
-                            </h1>
-                            <SearchForm />
+                <>
+                    <section className="relative">
+                        <Image className="absolute h-full w-full object-cover -z-10" src={sky} alt="Sky background" />
+                        <div className="px-3 z-10">
+                            <div className="max-w-screen-xl mx-auto md:py-44 py-32">
+                                <h1 className="text-3xl font-semibold text-gray-900">
+                                    Search for a city or place
+                                </h1>
+                                <SearchForm />
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                    <section className="px-3">
+                        <div className="max-w-screen-xl mx-auto py-20">
+                            <ul className="grid md:grid-cols-3 gap-6">
+                                <li className="p-12 border border-gray-300 rounded">
+                                    <svg className="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">
+                                        Search any place
+                                    </h2>
+                                    <p className="text-gray-700">
+                                        Search by city, state, address, and more locations.
+                                    </p>
+                                </li>
+                                <li className="p-12 border border-gray-300 rounded">
+                                    <svg className="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                    </svg>
+                                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">
+                                        Real time data
+                                    </h2>
+                                    <p className="text-gray-700">
+                                        Get up to date weather information up to 5-30 minutes.
+                                    </p>
+                                </li>
+                                <li className="p-12 border border-gray-300 rounded">
+                                    <svg className="w-6 h-6 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+                                    </svg>
+                                    <h2 className="text-2xl font-semibold mb-2 text-gray-900">
+                                        Ulimited access
+                                    </h2>
+                                    <p className="text-gray-700">
+                                        Use SkyPulse free forever, no signup required.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section className="px-3 bg-gray-100">
+                        <div className="max-w-screen-xl mx-auto py-20">
+                            <ul className="space-y-4">
+                                {faqData.map((qa) => {
+                                    return (
+                                        <li className="p-6 bg-white rounded cursor-pointer" onClick={() => setHowItWorks(howItWorks !== qa.question ? qa.question : null)}>
+                                            <div className="flex justify-between items-center gap-4">
+                                                <p className="text-xl text-gray-900">
+                                                    {qa.question}
+                                                </p>
+                                                <svg class={`${howItWorks === qa.question && "rotate-90"} w-7 h-7 text-blue-500 transition`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                                </svg>
+                                            </div>
+                                            <p className={`${howItWorks === qa.question ? "block" : "hidden"} mt-2 text-sm text-gray-500`}>
+                                                {qa.answer}
+                                            </p>
+                                        </li>
+                                    )
+                                })}
+                            </ul>
+                        </div>
+                    </section>
+                </>
             }/>
         </>
     )

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is SkyPulse?",
+        "answer": "SkyPulse is a user-friendly weather application designed to provide you with up-to-date weather information for any location. It's your go-to source for accurate and real-time weather data."
+    },
+    {
+        "question": "How do I search for weather?",
+        "answer": "To check the weather for any city or ZIP code, simply enter the location in the search bar at the top of the page. Our app will instantly fetch and display the latest weather conditions for you."
+    },
+    {
+        "question": "Can I see weather forecasts?",
+        "answer": "Yes, SkyPulse offers detailed weather forecasts, including temperature highs and lows, precipitation forecasts, and weather icons, so you can plan ahead with confidence."
+    },
+    {
+        "question": "Is it real-time weather data?",
+        "answer": "Yes, SkyPulse provides real-time weather data, ensuring that you have access to the most current information about the weather conditions in your selected area."
+    },
+    {
+        "question": "Is there a mobile app available?",
+        "answer": "While we currently offer SkyPulse as a web application, we are actively working on a mobile app for even more convenience on the go. Stay tuned for updates."
+    },
+    {
+        "question": "Do I need to sign up or create an account?",
+        "answer": "No, SkyPulse values your privacy and convenience. You can use our weather services without the need to sign up or create an account. Just visit our website and start checking the weather instantly."
+    }
+]
