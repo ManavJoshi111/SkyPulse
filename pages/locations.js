@@ -21,7 +21,7 @@ export default function Home() {
                             {locationsData.map((location) => {
                                 return (
                                     <li key={location.locaiton}>
-                                        <Link className="block p-12 border border-gray-300 rounded" href="/coming-soon">
+                                        <Link className="block p-12 bg-white border border-gray-300 rounded" href="/coming-soon">
                                             <h2 className="text-2xl font-semibold mb-2 text-gray-900">
                                                 {location.location}
                                             </h2>

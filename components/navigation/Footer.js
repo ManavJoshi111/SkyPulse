@@ -21,7 +21,7 @@ export default function Footer() {
                                         <InlineLink text="Search" href="/" />
                                     </li>
                                     <li>
-                                        <InlineLink text="Locations" href="/coming-soon" />
+                                        <InlineLink text="Locations" href="/locations" />
                                     </li>
                                     <li>
                                         <InlineLink text="About" href="/coming-soon" />

@@ -29,7 +29,7 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-                    <section className="w-full px-3">
+                    <section className="w-full px-3 bg-white">
                         <div className="max-w-screen-xl mx-auto py-20">
                             <ul className="grid md:grid-cols-3 gap-6">
                                 <li className="p-12 border border-gray-300 rounded">
