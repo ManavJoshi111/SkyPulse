@@ -18,8 +18,8 @@ export default function Home() {
             </Head>
             <PrimaryLayout content={
                 <>
-                    <section className="relative">
-                        <Image className="absolute h-full w-full object-cover -z-10" src={sky} alt="Sky background" />
+                    <section className="relative w-full">
+                        <Image className="absolute h-full w-full object-cover -z-10" src={sky} alt="Sky background" priority />
                         <div className="px-3 z-10">
                             <div className="max-w-screen-xl mx-auto md:py-44 py-32">
                                 <h1 className="text-3xl font-semibold text-gray-900">
@@ -29,7 +29,7 @@ export default function Home() {
                             </div>
                         </div>
                     </section>
-                    <section className="px-3">
+                    <section className="w-full px-3">
                         <div className="max-w-screen-xl mx-auto py-20">
                             <ul className="grid md:grid-cols-3 gap-6">
                                 <li className="p-12 border border-gray-300 rounded">
@@ -68,7 +68,7 @@ export default function Home() {
                             </ul>
                         </div>
                     </section>
-                    <section className="px-3 bg-gray-100">
+                    <section className="w-full px-3 bg-gray-100">
                         <div className="max-w-screen-xl mx-auto py-20">
                             <ul className="space-y-4">
                                 {faqData.map((qa) => {
@@ -78,7 +78,7 @@ export default function Home() {
                                                 <p className="text-xl text-gray-900">
                                                     {qa.question}
                                                 </p>
-                                                <svg class={`${howItWorks === qa.question && "rotate-90"} w-7 h-7 text-blue-500 transition`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                                                <svg className={`${howItWorks === qa.question && "rotate-90"} w-7 h-7 text-blue-500 transition`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                                 </svg>
                                             </div>
