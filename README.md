@@ -1,39 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SkyPulse
 
-## Getting Started
+SkyPulse is an open-source weather application designed to provide you with up-to-date weather information for any location. It's your go-to source for accurate and real-time weather data.
 
-First, run the development server:
+<img src="https://i.ibb.co/d0gbmjp/Capture.png" alt="Site preview">
 
-```bash
+#### Features
+-   **Real-Time Weather:** Get access to the latest weather conditions and forecasts for any location worldwide.
+-   **Location Search:** Enter a city or ZIP code to instantly view the weather for your selected area.
+-   **Detailed Forecasts:** SkyPulse offers detailed weather forecasts, including temperature highs and lows, precipitation forecasts, and weather icons.
+-   **Responsive Design:** Enjoy a user-friendly experience on both desktop and mobile devices.
+-   **No Signup Required:** SkyPulse values your privacy and convenience. Use our weather services without the need to sign up or create an account.
+
+#### How It Works
+SkyPulse is a simple and intuitive web-based weather application. Enter a city or ZIP code in the search bar at the top of the page, and the app will fetch and display the latest weather conditions for your selected location. It provides real-time weather data to ensure you have access to the most current information.
+
+If you're interested in running SkyPulse on your own server, you can fork and clone the repository. Please refer to the "Getting Started" section for details on how to set up the project. Note that certain features may require specifying environment variables.
+
+#### Getting Started
+To get started with SkyPulse locally, follow these steps:
+
+1. Fork and clone the project.
+2. Open your terminal and run the following commands in your new local directory:
+
+```
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Contributing
+We welcome contributions from the community! If you'd like to contribute to SkyPulse, create a fork of the project and open a pull request with your changes
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Fork the Repository: Click "Fork" at the top right of this page to create a copy in your GitHub account.
+2. Make Changes: Make your desired changes in your forked copy.
+3. Create a Pull Request: Open a Pull Request to suggest your changes.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# SkyPulse" 
+#### License
+License - [MIT](https://github.com/brandonbyr4/SkyPulse/blob/main/LICENSE)
